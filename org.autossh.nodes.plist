@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>org.autossh.nodes</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/autossh</string>
+		<string>-M</string>
+		<string>28333</string>
+		<string>-f</string>
+		<string>-T</string>
+		<string>-N</string>
+		<string>rigmw</string>
+		<string>-R</string>
+		<string>0.0.0.0:8333:127.0.0.1:8333</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+</dict>
+</plist>
